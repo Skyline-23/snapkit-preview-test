@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62D2E9EE26A7143100091C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9ED26A7143100091C83 /* AppDelegate.swift */; };
-		62D2E9F026A7143100091C83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9EF26A7143100091C83 /* SceneDelegate.swift */; };
 		62D2E9F226A7143100091C83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9F126A7143100091C83 /* ViewController.swift */; };
-		62D2E9F526A7143100091C83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D2E9F326A7143100091C83 /* Main.storyboard */; };
 		62D2E9F726A7143200091C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D2E9F626A7143200091C83 /* Assets.xcassets */; };
 		62D2E9FA26A7143200091C83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D2E9F826A7143200091C83 /* LaunchScreen.storyboard */; };
 		62D2EA0526A7143200091C83 /* snapkit_preview_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2EA0426A7143200091C83 /* snapkit_preview_testTests.swift */; };
@@ -37,18 +35,16 @@
 /* Begin PBXFileReference section */
 		62D2E9EA26A7143100091C83 /* snapkit-preview-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snapkit-preview-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D2E9ED26A7143100091C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		62D2E9EF26A7143100091C83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		62D2E9F126A7143100091C83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		62D2E9F426A7143100091C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62D2E9F626A7143200091C83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62D2E9F926A7143200091C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		62D2E9FB26A7143200091C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D2EA0026A7143200091C83 /* snapkit-preview-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snapkit-preview-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D2EA0426A7143200091C83 /* snapkit_preview_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapkit_preview_testTests.swift; sourceTree = "<group>"; };
 		62D2EA0626A7143200091C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D2EA0B26A7143200091C83 /* snapkit-preview-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snapkit-preview-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D2EA0F26A7143200091C83 /* snapkit_preview_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapkit_preview_testUITests.swift; sourceTree = "<group>"; };
 		62D2EA1126A7143200091C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D2EA2026A716F700091C83 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +95,9 @@
 		62D2E9EC26A7143100091C83 /* snapkit-preview-test */ = {
 			isa = PBXGroup;
 			children = (
-				62D2E9ED26A7143100091C83 /* AppDelegate.swift */,
-				62D2E9EF26A7143100091C83 /* SceneDelegate.swift */,
-				62D2E9F126A7143100091C83 /* ViewController.swift */,
-				62D2E9F326A7143100091C83 /* Main.storyboard */,
-				62D2E9F626A7143200091C83 /* Assets.xcassets */,
-				62D2E9F826A7143200091C83 /* LaunchScreen.storyboard */,
-				62D2E9FB26A7143200091C83 /* Info.plist */,
+				62D2EA1F26A7169A00091C83 /* Source */,
+				62D2EA1E26A7146900091C83 /* Resource */,
+				62D2EA1D26A7144C00091C83 /* SupportingFile */,
 			);
 			path = "snapkit-preview-test";
 			sourceTree = "<group>";
@@ -126,6 +118,32 @@
 				62D2EA1126A7143200091C83 /* Info.plist */,
 			);
 			path = "snapkit-preview-testUITests";
+			sourceTree = "<group>";
+		};
+		62D2EA1D26A7144C00091C83 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				62D2EA2026A716F700091C83 /* Info.plist */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		62D2EA1E26A7146900091C83 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				62D2E9F626A7143200091C83 /* Assets.xcassets */,
+				62D2E9F826A7143200091C83 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		62D2EA1F26A7169A00091C83 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				62D2E9ED26A7143100091C83 /* AppDelegate.swift */,
+				62D2E9F126A7143100091C83 /* ViewController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +251,6 @@
 			files = (
 				62D2E9FA26A7143200091C83 /* LaunchScreen.storyboard in Resources */,
 				62D2E9F726A7143200091C83 /* Assets.xcassets in Resources */,
-				62D2E9F526A7143100091C83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +277,6 @@
 			files = (
 				62D2E9F226A7143100091C83 /* ViewController.swift in Sources */,
 				62D2E9EE26A7143100091C83 /* AppDelegate.swift in Sources */,
-				62D2E9F026A7143100091C83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		62D2E9F326A7143100091C83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62D2E9F426A7143100091C83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		62D2E9F826A7143200091C83 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +446,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
-				INFOPLIST_FILE = "snapkit-preview-test/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/snapkit-preview-test/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +465,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q23JLSJCCV;
-				INFOPLIST_FILE = "snapkit-preview-test/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/snapkit-preview-test/SupportingFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
