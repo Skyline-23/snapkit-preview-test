@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624E9BC926A7D30100D63267 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9BC826A7D30100D63267 /* Preview.swift */; };
+		624E9BCB26A7D44100D63267 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9BCA26A7D44100D63267 /* DeviceType.swift */; };
+		624E9BCD26A7F00400D63267 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9BCC26A7F00400D63267 /* UIViewPreview.swift */; };
 		62D2E9EE26A7143100091C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9ED26A7143100091C83 /* AppDelegate.swift */; };
 		62D2E9F226A7143100091C83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9F126A7143100091C83 /* ViewController.swift */; };
 		62D2E9F726A7143200091C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D2E9F626A7143200091C83 /* Assets.xcassets */; };
 		62D2E9FA26A7143200091C83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D2E9F826A7143200091C83 /* LaunchScreen.storyboard */; };
 		62D2EA0526A7143200091C83 /* snapkit_preview_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2EA0426A7143200091C83 /* snapkit_preview_testTests.swift */; };
 		62D2EA1026A7143200091C83 /* snapkit_preview_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2EA0F26A7143200091C83 /* snapkit_preview_testUITests.swift */; };
+		62D2EA2426A71BDE00091C83 /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2EA2326A71BDE00091C83 /* UIViewControllerPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		624E9BC826A7D30100D63267 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		624E9BCA26A7D44100D63267 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		624E9BCC26A7F00400D63267 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		62D2E9EA26A7143100091C83 /* snapkit-preview-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snapkit-preview-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D2E9ED26A7143100091C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D2E9F126A7143100091C83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +52,7 @@
 		62D2EA0F26A7143200091C83 /* snapkit_preview_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snapkit_preview_testUITests.swift; sourceTree = "<group>"; };
 		62D2EA1126A7143200091C83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62D2EA2026A716F700091C83 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62D2EA2326A71BDE00091C83 /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 		62D2E9EC26A7143100091C83 /* snapkit-preview-test */ = {
 			isa = PBXGroup;
 			children = (
+				624E9BC826A7D30100D63267 /* Preview.swift */,
 				62D2EA1F26A7169A00091C83 /* Source */,
 				62D2EA1E26A7146900091C83 /* Resource */,
 				62D2EA1D26A7144C00091C83 /* SupportingFile */,
@@ -142,8 +151,19 @@
 			children = (
 				62D2E9ED26A7143100091C83 /* AppDelegate.swift */,
 				62D2E9F126A7143100091C83 /* ViewController.swift */,
+				62D2EA2226A71B9C00091C83 /* Utils */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		62D2EA2226A71B9C00091C83 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				62D2EA2326A71BDE00091C83 /* UIViewControllerPreview.swift */,
+				624E9BCC26A7F00400D63267 /* UIViewPreview.swift */,
+				624E9BCA26A7D44100D63267 /* DeviceType.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D2E9F226A7143100091C83 /* ViewController.swift in Sources */,
+				62D2EA2426A71BDE00091C83 /* UIViewControllerPreview.swift in Sources */,
+				624E9BC926A7D30100D63267 /* Preview.swift in Sources */,
 				62D2E9EE26A7143100091C83 /* AppDelegate.swift in Sources */,
+				624E9BCB26A7D44100D63267 /* DeviceType.swift in Sources */,
+				624E9BCD26A7F00400D63267 /* UIViewPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
