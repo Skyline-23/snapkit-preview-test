@@ -9,24 +9,19 @@ import UIKit
 
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
-extension UIViewController {
-
-    private struct Preview: UIViewControllerRepresentable {
-        let viewController: UIViewController
-        
-        func makeUIViewController(context: Context) -> UIViewController {
-            return viewController
-        }
-
-        func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-            return
-        }
-        
-    }
-
-    func showPreview(_ deviceType: DeviceType = .iPhone12Pro) -> some View {
-        Preview(viewController: self).previewDevice(PreviewDevice(rawValue: deviceType.name()))
+struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
+    let viewController: ViewController
+    
+    init(_ builder: @escaping () -> ViewController) {
+        viewController = builder()
     }
     
+    func makeUIViewController(context: Context) -> ViewController {
+        viewController
+    }
+    
+    func updateUIViewController(_ uiViewController: ViewController, context: UIViewControllerRepresentableContext<UIViewControllerPreview<ViewController>>) {
+        return
+    }
 }
 #endif

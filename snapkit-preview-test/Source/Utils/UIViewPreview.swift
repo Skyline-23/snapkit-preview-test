@@ -5,28 +5,24 @@
 //  Created by 김부성 on 2021/07/21.
 //
 
-import Foundation
+import UIKit
 
 #if canImport(SwiftUI) && DEBUG
 import SwiftUI
-extension UIView {
+struct UIViewPreview<View: UIView>: UIViewRepresentable {
+    let view: View
     
-    private struct Preview: UIViewRepresentable {
-        let view: UIView
-        
-        func makeUIView(context: Context) -> some UIView {
-            return view
-        }
-        
-        func updateUIView(_ uiView: UIViewType, context: Context) {
-            return
-        }
-        
+    init(_ builder: @escaping () -> View) {
+        view = builder()
     }
     
-    func showPreview(_ deviceType: DeviceType = .iPhone12Pro) -> some View {
-        Preview(view: self).previewDevice(PreviewDevice(rawValue: deviceType.name()))
+    func makeUIView(context: Context) -> UIView {
+        return view
     }
     
+    func updateUIView(_ view: UIView, context: Context) {
+        view.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        view.setContentHuggingPriority(.defaultHigh, for: .vertical)
+    }
 }
 #endif
