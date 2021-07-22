@@ -9,6 +9,7 @@ target 'snapkit-preview-test' do
 
   pod 'SnapKit', '~> 5.0.0'
   pod 'Then'
+  pod 'AcknowList'
 
   target 'snapkit-preview-testTests' do
     inherit! :search_paths

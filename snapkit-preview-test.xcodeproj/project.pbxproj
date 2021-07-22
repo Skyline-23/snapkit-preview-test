@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6221DEC126A9B80B00F3B12A /* Pods-snapkit-preview-test-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6221DEC026A9B80A00F3B12A /* Pods-snapkit-preview-test-acknowledgements.plist */; };
 		624E9BC926A7D30100D63267 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9BC826A7D30100D63267 /* Preview.swift */; };
 		624E9BCB26A7D44100D63267 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9BCA26A7D44100D63267 /* DeviceType.swift */; };
 		624E9BCD26A7F00400D63267 /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9BCC26A7F00400D63267 /* UIViewPreview.swift */; };
+		629D5F1E26A80D7B00DD7D78 /* customTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D5F1D26A80D7B00DD7D78 /* customTextField.swift */; };
+		629D5F2226A871D400DD7D78 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D5F2126A871D400DD7D78 /* CustomButton.swift */; };
 		62D2E9EE26A7143100091C83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9ED26A7143100091C83 /* AppDelegate.swift */; };
 		62D2E9F226A7143100091C83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E9F126A7143100091C83 /* ViewController.swift */; };
 		62D2E9F726A7143200091C83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D2E9F626A7143200091C83 /* Assets.xcassets */; };
@@ -44,9 +47,12 @@
 		0F839D43729D8BD159C1801A /* Pods_snapkit_preview_test_snapkit_preview_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapkit_preview_test_snapkit_preview_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F51CA7326C92132FB4634FF /* Pods-snapkit-preview-test-snapkit-preview-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snapkit-preview-test-snapkit-preview-testUITests.debug.xcconfig"; path = "Target Support Files/Pods-snapkit-preview-test-snapkit-preview-testUITests/Pods-snapkit-preview-test-snapkit-preview-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58C6BEB5BEE69BC26D69E994 /* Pods_snapkit_preview_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapkit_preview_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6221DEC026A9B80A00F3B12A /* Pods-snapkit-preview-test-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "Pods-snapkit-preview-test-acknowledgements.plist"; path = "Pods/Target Support Files/Pods-snapkit-preview-test/Pods-snapkit-preview-test-acknowledgements.plist"; sourceTree = SOURCE_ROOT; };
 		624E9BC826A7D30100D63267 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		624E9BCA26A7D44100D63267 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		624E9BCC26A7F00400D63267 /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		629D5F1D26A80D7B00DD7D78 /* customTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
+		629D5F2126A871D400DD7D78 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		62D2E9EA26A7143100091C83 /* snapkit-preview-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snapkit-preview-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D2E9ED26A7143100091C83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D2E9F126A7143100091C83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,8 +111,31 @@
 				E52B402272C928CABB068CE2 /* Pods-snapkit-preview-testTests.debug.xcconfig */,
 				6ED313DD972A868D0FC2150A /* Pods-snapkit-preview-testTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		629D5F1A26A80BD100DD7D78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62D2E9F126A7143100091C83 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		629D5F1B26A80BE200DD7D78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				629D5F1D26A80D7B00DD7D78 /* customTextField.swift */,
+				629D5F2126A871D400DD7D78 /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		629D5F1C26A80BED00DD7D78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		62D2E9E126A7143100091C83 = {
@@ -164,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				62D2EA2026A716F700091C83 /* Info.plist */,
+				6221DEC026A9B80A00F3B12A /* Pods-snapkit-preview-test-acknowledgements.plist */,
 			);
 			path = SupportingFile;
 			sourceTree = "<group>";
@@ -181,7 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				62D2E9ED26A7143100091C83 /* AppDelegate.swift */,
-				62D2E9F126A7143100091C83 /* ViewController.swift */,
+				629D5F1C26A80BED00DD7D78 /* Model */,
+				629D5F1B26A80BE200DD7D78 /* View */,
+				629D5F1A26A80BD100DD7D78 /* ViewController */,
 				62D2EA2226A71B9C00091C83 /* Utils */,
 			);
 			path = Source;
@@ -315,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6221DEC126A9B80B00F3B12A /* Pods-snapkit-preview-test-acknowledgements.plist in Resources */,
 				62D2E9FA26A7143200091C83 /* LaunchScreen.storyboard in Resources */,
 				62D2E9F726A7143200091C83 /* Assets.xcassets in Resources */,
 			);
@@ -445,8 +478,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D2E9F226A7143100091C83 /* ViewController.swift in Sources */,
+				629D5F1E26A80D7B00DD7D78 /* customTextField.swift in Sources */,
 				62D2EA2426A71BDE00091C83 /* UIViewControllerPreview.swift in Sources */,
 				624E9BC926A7D30100D63267 /* Preview.swift in Sources */,
+				629D5F2226A871D400DD7D78 /* CustomButton.swift in Sources */,
 				62D2E9EE26A7143100091C83 /* AppDelegate.swift in Sources */,
 				624E9BCB26A7D44100D63267 /* DeviceType.swift in Sources */,
 				624E9BCD26A7F00400D63267 /* UIViewPreview.swift in Sources */,
