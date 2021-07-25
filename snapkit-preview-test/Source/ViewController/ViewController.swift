@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     let textField = customTextField().then {
         $0.titleLabel.text = "텍스트를 입력해주세요!"
         $0.textField.placeholder = "텍스트"
+        $0.textField.autocorrectionType = .no
     }
     
     let button = UIButton().then {
@@ -26,22 +27,23 @@ class ViewController: UIViewController {
         $0.layer.cornerRadius = 10
         $0.setTitle("오픈소스 보기", for: .normal)
     }
-
+    
     // MARK: - life cycle
     override func viewDidLoad() {
         let safeArea = self.view.safeAreaLayoutGuide
         
         super.viewDidLoad()
         
-        self.bind()
-        
+        self.view.backgroundColor = .white
         view.addSubview(textField)
         view.addSubview(button)
+        
+        self.bind()
         
         self.textField.snp.makeConstraints {
             $0.left.equalTo(safeArea.snp.left).offset(20)
             $0.right.equalTo(safeArea.snp.right).offset(-20)
-            $0.centerY.equalTo(safeArea.snp.centerY)
+            $0.centerY.equalTo(safeArea.snp.centerY).offset(-100)
             $0.height.equalTo(65)
         }
         
@@ -60,13 +62,13 @@ class ViewController: UIViewController {
             self.showOpenSources()
         }.disposed(by: disposeBag)
         
-//        RxKeyboard.instance.visibleHeight
-//            .drive(onNext: { keyboardHeight in
-//                self.button.snp.updateConstraints {
-//                    $0.bottom.equalTo(keyboardHeight).offset(-32)
-//                }
-//            })
-//            .disposed(by: disposeBag)
+        RxKeyboard.instance.visibleHeight
+          .drive(onNext: { keyboardHeight in
+            self.button.snp.updateConstraints {
+                $0.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).offset(-keyboardHeight-32)
+            }
+          })
+          .disposed(by: disposeBag)
     }
 
     //MARK: - Methods
