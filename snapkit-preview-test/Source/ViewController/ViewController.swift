@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemBackground
         view.addSubview(textField)
         view.addSubview(button)
         
